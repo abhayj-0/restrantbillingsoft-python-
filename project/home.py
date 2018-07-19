@@ -218,11 +218,11 @@ bu13.grid(row=1, column=7)
 bu14 = Entry(tab5)
 bu14.grid(row=3, column=7)
 def totalp():
-    sumo = int(bu1.get())*12 + int(bu2.get())*50 + int(bu3.get())*200 + int(bu4.get())*20 + int(bu5.get())*10000 + int(bu6.get())*100 + int(
-        bu7.get())*500 + int(bu8.get())*780 + int(bu9.get())*184 + int(bu10.get())*200 + int(
-        bu11.get())*300 + int(bu12.get())*60 + int(bu13.get())*100 + int(bu14.get())*40
+
+    sumo = int(bu1.get())*12 + int(bu2.get())*50 + int(bu3.get())*200 + int(bu4.get())*20 + int(bu5.get())*10000 + int(bu6.get())*100 + int(bu7.get())*500 + int(bu8.get())*780 + int(bu9.get())*184 + int(bu10.get())*200 + int(bu11.get())*300 + int(bu12.get())*60 + int(bu13.get())*100 + int(bu14.get())*40
+
     tax=(2/100)*sumo
-    surv=3
+    surv=(3/100)*100
     subt=surv+tax+sumo
     totta=sumo+subt
     labe1 = Label(tab5, text=str(tax))
