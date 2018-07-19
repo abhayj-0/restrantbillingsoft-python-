@@ -1,6 +1,5 @@
 from tkinter import *
-from tkinter import simpledialog,messagebox,ttk
-from tkinter import Tcl
+from tkinter import simpledialog,messagebox,ttk,Tcl
 import sqlite3
 conn = sqlite3.connect('menu')
 conn.execute('''CREATE TABLE IF NOT EXISTS TOTA(
@@ -264,19 +263,19 @@ for i in h:
                 g.grid(rowspan=2,column=10)
                 q = Label(tab1,text=i[2])
                 q.grid(rowspan=3,column=40)
-                hu = conn.execute("SELECT * FROM DRINKS_1")
+hu = conn.execute("SELECT * FROM DRINKS_1")
 for i in hu:
                 g = Label(tab2, text=i[1])
                 g.grid(rowspan=2, column=10)
                 q = Label(tab2, text=i[2])
                 q.grid(rowspan=3, column=40)
-                hIU = conn.execute("SELECT * FROM COFFE")
+hIU = conn.execute("SELECT * FROM COFFE")
 for i in hIU:
                 g = Label(tab3, text=i[1])
                 g.grid(rowspan=2, column=10)
                 q = Label(tab3, text=i[2])
                 q.grid(rowspan=3, column=40)
-                hA = conn.execute("SELECT * FROM DESSETS")
+hA = conn.execute("SELECT * FROM DESSETS")
 for i in hA:
                 g = Label(tab4, text=i[1])
                 g.grid(rowspan=2, column=10)
